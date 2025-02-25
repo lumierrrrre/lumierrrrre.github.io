@@ -1,0 +1,467 @@
+@import "./normalize.css";
+
+@font-face {
+    font-family: "Lexend";
+    src: url("../fonts/Lexend-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("../fonts/Lexend-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("../fonts/Lexend-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("../fonts/Lexend-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("../fonts/Lexend-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Molle";
+    src: url("../fonts/Molle-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-dark: #2d2d2d;
+    --color-light: #ffffff;
+
+    --font-family-base: "Lexend", serif;
+
+    --container-width: 1300px;
+    --container-padding-x: 75px;
+
+    --transition-duration: 0.2s;
+
+    --border-radius: 30px;
+}
+
+body {
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.75;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+a,
+button,
+input,
+textarea {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+a:active {
+    position: relative;
+    top: 1px;
+}
+
+.container {
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    padding-inline: 26px;
+    line-height: 2;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 20px;
+}
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 110px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+
+    padding: 20px 75px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo-text {
+    font-family: "Molle", serif;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.header-menu-list {
+    display: flex;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.header-menu-link {
+    font-size: 20px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    column-gap: 100px;
+    flex-wrap: wrap;
+}
+
+.banner-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-greeting {
+    font-size: 70px;
+}
+
+.banner-greeting-desc {
+    font-size: 45px;
+}
+
+.banner-button {
+    background-color: #303133;
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.banner-image {
+    width: 452px;
+    height: 452px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    column-gap: 100px;
+}
+
+.universities {
+    max-width: 550px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.university-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.university-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.university-name {
+    display: flex;
+    align-items: center;
+}
+
+.university-name-link {
+    font-weight: 600;
+}
+
+.university-logo {
+    width: 55px;
+    margin-right: 20px;
+}
+
+.university-desc {
+    margin-left: 75px;
+}
+
+.university-field {
+    font-weight: 300;
+}
+
+.skills {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.skills-item-logo {
+    width: 70px;
+}
+
+.skills-codewars {
+    margin-top: 30px;
+}
+
+.projects {
+    margin-top: 75px;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.projects-item {
+    max-width: 370px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.projects-item-image {
+    border-radius: 10px;
+}
+
+.projects-item-name {
+    padding: 15px 20px 15px;
+}
+
+.contacts {
+    margin-top: 75px;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.contacts-item-title {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer {
+    padding: 20px 75px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 75px;
+}
+
+.footer__link-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.footer__link-list-item-link {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.footer__link-list-item-image {
+    width: 45px;
+}
+
+@media (max-width: 1275px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .header-menu-list {
+        justify-content: center;
+        column-gap: 30px;
+    }
+
+    .banner-greeting {
+        font-size: 50px;
+    }
+
+    .banner-greeting-desc {
+        font-size: 30px;
+    }
+
+    .banner-button {
+        font-size: 18px;
+    }
+
+    .banner-image {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .title {
+        margin-bottom: 30px;
+    }
+
+    .banner {
+        margin-top: 50px;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .banner-info {
+        order: 1;
+    }
+
+    .banner-button {
+        margin-top: 30px;
+        align-self: center;
+    }
+
+    .education {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 75px;
+    }
+}
+
+@media (max-width: 670px) {
+    .banner-info {
+        align-items: center;
+    }
+
+    .banner-greeting {
+        font-size: 40px;
+    }
+
+    .banner-greeting-desc {
+        font-size: 26px;
+    }
+
+    .banner-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .education {
+        row-gap: 50px;
+    }
+
+    .projects {
+        margin-top: 50px;
+    }
+
+    .skills-codewars-image {
+        height: 35px;
+    }
+}
+
+@media (max-width: 520px) {
+    .body {
+        font-size: 18px;
+    }
+
+    .container {
+        padding-inline: 50px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .banner-greeting {
+        font-size: 30px;
+    }
+
+    .banner-greeting-desc {
+        font-size: 22px;
+    }
+
+    .banner-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .skills-item-logo {
+        width: 60px;
+    }
+
+    .projects-item-name {
+        padding: 10px 15px 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .header {
+        padding-inline: 50px;
+    }
+}

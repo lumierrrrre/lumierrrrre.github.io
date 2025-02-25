@@ -1,11 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nikolai Vasiliev</title>
+        <link rel="stylesheet" href="./styles/main.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-logo">
+                <a href="/" class="header-logo-text"> Lumière </a>
+            </div>
+
+            <nav class="header-menu">
+                <ul class="header-menu-list">
+                    <li class="header-menu-item">
+                        <a class="header-menu-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a class="header-menu-link" href="#projects"
+                            >Projects</a
+                        >
+                    </li>
+                    <li class="header-menu-item">
+                        <a class="header-menu-link" href="#contacts"
+                            >Contacts</a
+                        >
+                    </li>
+                    <li class="header-menu-item">
+                        <a
+                            class="header-menu-link"
+                            href="#!"
+                            onclick="alert('In development.')"
+                            >About me</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content">
+            <section class="banner container">
+                <div class="banner-info">
+                    <h1 class="banner-greeting">Hi, I am Nikolai</h1>
+                    <h2 class="banner-greeting-desc">Frontend Developer</h2>
+                    <a
+                        href="#!"
+                        class="banner-button button"
+                        onclick="alert('Sorry, not ready yet.')"
+                        >Download CV</a
+                    >
+                </div>
+                <img
+                    src="./images/byAdeline.jpg"
+                    alt="Developer Avatar"
+                    class="banner-image"
+                    loading="lazy"
+                />
+            </section>
+            <section class="education container" id="skills">
+                <article class="universities">
+                    <h3 class="title">Education</h3>
+                    <ol class="university-list">
+                        <ul class="university-item">
+                            <div class="university-name">
+                                <img
+                                    src="./images/universities/uust-logo.png"
+                                    alt="Ufa University of Science and Technology Logo"
+                                    class="university-logo"
+                                    loading="lazy"
+                                />
+                                <a
+                                    href="https://uust.ru/"
+                                    target="_blank"
+                                    class="university-name-link"
+                                    >Ufa University of Science and Technology</a
+                                >
+                            </div>
+                            <div class="university-desc">
+                                <p class="university-degree">
+                                    Bachelor (2019-2023)
+                                </p>
+                                <p class="university-field">
+                                    Software Engineering
+                                </p>
+                            </div>
+                        </ul>
+                        <ul class="university-item">
+                            <div class="university-name">
+                                <img
+                                    src="./images/universities/spbpu-logo.png"
+                                    alt="Peter the Great St.Petersburg Polytechnic University Logo"
+                                    class="university-logo"
+                                    loading="lazy"
+                                />
+                                <a
+                                    href="https://www.spbstu.ru/"
+                                    target="_blank"
+                                    class="university-name-link"
+                                    >Peter the Great St.Petersburg Polytechnic
+                                    University</a
+                                >
+                            </div>
+                            <div class="university-desc">
+                                <p class="university-degree">
+                                    Master (2023-2025)
+                                </p>
+                                <p class="university-field">
+                                    Informatics and computer engineering
+                                </p>
+                            </div>
+                        </ul>
+                    </ol>
+                </article>
+                <article class="skills">
+                    <h3 class="title">Skills</h3>
+                    <ul class="skills-list">
+                        <li class="skills-item">
+                            <img
+                                src="./images/skills/html.svg"
+                                alt="HTML Logo"
+                                class="skills-item-logo"
+                                loading="lazy"
+                            />
+                            HTML
+                        </li>
+                        <li class="skills-item">
+                            <img
+                                src="./images/skills/css.svg"
+                                alt="CSS Logo"
+                                class="skills-item-logo"
+                                loading="lazy"
+                            />
+                            CSS
+                        </li>
+                        <li class="skills-item">
+                            <img
+                                src="./images/skills/javascript.svg"
+                                alt="JavaScript Logo"
+                                class="skills-item-logo"
+                                loading="lazy"
+                            />
+                            JavaScript
+                        </li>
+                        <li class="skills-item">
+                            <img
+                                src="./images/skills/typescript.svg"
+                                alt="TypeScript Logo"
+                                class="skills-item-logo"
+                                loading="lazy"
+                            />
+                            TypeScript
+                        </li>
+                        <li class="skills-item">
+                            <img
+                                src="./images/skills/react-dark.svg"
+                                alt="React Logo"
+                                class="skills-item-logo"
+                                loading="lazy"
+                            />
+                            React
+                        </li>
+                    </ul>
+                    <a
+                        class="skills-codewars"
+                        target="_blank"
+                        href="https://www.codewars.com/users/lumierrrrre"
+                    >
+                        <picture class="skills-codewars-picture">
+                            <source
+                                media="(max-width: 550px)"
+                                srcset="
+                                    https://www.codewars.com/users/lumierrrrre/badges/micro
+                                "
+                            />
+                            <source
+                                media="(min-width: 551px)"
+                                srcset="
+                                    https://www.codewars.com/users/lumierrrrre/badges/large
+                                "
+                            />
+                            <img
+                                class="skills-codewars-image"
+                                src="https://www.codewars.com/users/lumierrrrre/badges/large"
+                                alt="Codewars Profile Badge"
+                                loading="lazy"
+                            />
+                        </picture>
+                    </a>
+                </article>
+            </section>
+            <section class="projects container" id="projects">
+                <h3 class="title">Projects</h3>
+                <ul class="projects-list">
+                    <li class="projects-item">
+                        <a
+                            href="#!"
+                            class="projects-item-link"
+                            onclick="alert('In development.')"
+                        >
+                            <img
+                                src="./images/empty.jpg"
+                                alt="Project Cover"
+                                class="projects-item-image"
+                                loading="lazy"
+                            />
+                            <p class="projects-item-name">Empty</p>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a
+                            href="#!"
+                            class="projects-item-link"
+                            onclick="alert('In development.')"
+                        >
+                            <img
+                                src="./images/empty.jpg"
+                                alt="Project Cover"
+                                class="projects-item-image"
+                                loading="lazy"
+                            />
+                            <p class="projects-item-name">Empty</p>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a
+                            href="#!"
+                            class="projects-item-link"
+                            onclick="alert('In development.')"
+                        >
+                            <img
+                                src="./images/empty.jpg"
+                                alt="Project Cover"
+                                class="projects-item-image"
+                                loading="lazy"
+                            />
+                            <p class="projects-item-name">Empty</p>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a
+                            href="#!"
+                            class="projects-item-link"
+                            onclick="alert('In development.')"
+                        >
+                            <img
+                                src="./images/empty.jpg"
+                                alt="Project Cover"
+                                class="projects-item-image"
+                                loading="lazy"
+                            />
+                            <p class="projects-item-name">Empty</p>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a
+                            href="#!"
+                            class="projects-item-link"
+                            onclick="alert('In development.')"
+                        >
+                            <img
+                                src="./images/empty.jpg"
+                                alt="Project Cover"
+                                class="projects-item-image"
+                                loading="lazy"
+                            />
+                            <p class="projects-item-name">Empty</p>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a
+                            href="#!"
+                            class="projects-item-link"
+                            onclick="alert('In development.')"
+                        >
+                            <img
+                                src="./images/empty.jpg"
+                                alt="Project Cover"
+                                class="projects-item-image"
+                                loading="lazy"
+                            />
+                            <p class="projects-item-name">Empty</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="contacts container" id="contacts">
+                <h3 class="title contacts-title">Contacts</h3>
+                <address class="address">
+                    <ul class="contacts-list">
+                        <li class="contacts-item">
+                            <p class="contacts-item-title">Current Location</p>
+                            <p class="contacts-item-text">
+                                Saint-Petersburg, Russia
+                            </p>
+                        </li>
+                        <li class="contacts-item">
+                            <p class="contacts-item-title">Telegram</p>
+                            <a
+                                href="https://t.me/lumierrrrre"
+                                target="_blank"
+                                class="contacts-item-link"
+                                >@lumierrrrre</a
+                            >
+                        </li>
+                        <li class="contacts-item">
+                            <p class="contacts-item-title">E-mail</p>
+                            <a
+                                href="mailto:lumierrrrre@gmail.com"
+                                class="contacts-item-link"
+                                >lumierrrrre@gmail.com</a
+                            >
+                        </li>
+                    </ul>
+                </address>
+            </section>
+            <footer class="footer">
+                <ul class="footer__link-list">
+                    <li class="footer__link-list-item">
+                        <a
+                            href="https://github.com/lumierrrrre"
+                            target="_blank"
+                            class="footer__link-list-item-link"
+                        >
+                            <img
+                                src="./images/social/github.svg"
+                                alt="GitHub Logo"
+                                class="footer__link-list-item-image"
+                                loading="lazy"
+                            />
+                            <span class="footer__link-list-item-text"
+                                >GitHub</span
+                            >
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </main>
+    </body>
 </html>
